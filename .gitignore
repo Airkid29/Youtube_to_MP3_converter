@@ -1,0 +1,7 @@
+downloads/
+ffmpeg/
+ffmpeg.zip
+__pycache__/
+*.pyc
+venv/
+.venv/
