@@ -22,22 +22,27 @@ pip install -r requirements.txt
 
 ## Utilisation
 
-**Mode interactif** (l’URL sera demandée) :
+**Mode interactif** — au lancement, un menu propose les options suivantes :
 ```bash
 python main.py
 ```
 
+| Option | Description |
+|--------|-------------|
+| 1 | Telecharger une video (format MP4) |
+| 2 | Telecharger une playlist (MP3) |
+| 3 | Telecharger une video et convertir en MP3 |
+| 0 | Quitter |
+
 **En ligne de commande** :
 ```bash
-python main.py "https://www.youtube.com/watch?v=VIDEO_ID"
+python main.py <mode> <url> [dossier]
+# mode : 1 (video MP4), 2 (playlist MP3), 3 (video MP3)
+python main.py 3 "https://www.youtube.com/watch?v=VIDEO_ID"
+python main.py 1 "https://youtu.be/..." "videos"
 ```
 
-**Avec dossier de sortie personnalisé** :
-```bash
-python main.py "https://youtube.com/..." "mon_dossier"
-```
-
-Les fichiers MP3 sont enregistrés dans le dossier `downloads/` par défaut.
+Les fichiers sont enregistres dans `downloads/` par defaut.
 
 ## Structure du projet
 
